@@ -1,43 +1,47 @@
-# 🔩 Bearing Resistance Prediction using Machine Learning
+# 🔩 Bearing Resistance Prediction System
 
-## 📌 Overview
+A Machine Learning-based web application that predicts **soil bearing resistance** using multiple regression algorithms and deep learning techniques. This project was developed as part of a **university minor project** to compare various regression models and provide an interactive prediction system.
 
-Bearing Resistance Prediction is a Machine Learning project developed as part of a university minor project. The objective is to predict the bearing resistance of materials using multiple regression algorithms and compare their performance to identify the most accurate model.
-
-The project includes data preprocessing, feature engineering, model training, evaluation, and deployment of a web application for real-time predictions.
+🌐 **Live Demo:** https://bearing-resistance-ml.vercel.app/
 
 ---
 
-## 🌐 Live Demo
+## 📸 Project Screenshots
 
-🔗 **Website:** https://bearing-resistance-ml.vercel.app/
+### 🏠 Home Page
+
+![Home Page](images/homepage.png)
+
+### 📈 Prediction Interface
+
+![Prediction](images/prediction.png)
+
+### 📊 Analytics Dashboard
+
+![Dashboard](images/dashboard.png)
 
 ---
 
-## 🎯 Objectives
+## 📌 Project Overview
 
-- Predict bearing resistance using machine learning techniques.
-- Compare the performance of different regression models.
-- Evaluate models using standard regression metrics.
-- Deploy the trained model through a user-friendly web interface.
+The objective of this project is to accurately predict **soil bearing resistance (kPa)** using machine learning models trained on engineering data. The application enables users to input soil parameters and instantly receive a predicted bearing resistance value.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- Data preprocessing and cleaning
-- Feature scaling
-- Train-test split
-- Multiple regression models
-- Model performance comparison
-- Interactive prediction interface
-- Web deployment
+- Interactive web interface
+- Real-time bearing resistance prediction
+- Multiple regression model comparison
+- Model analytics dashboard
+- Clean and responsive UI
+- Dataset visualization
 
 ---
 
 ## 🤖 Machine Learning Models
 
-The following regression algorithms were implemented and evaluated:
+The following models were implemented and evaluated:
 
 - Linear Regression
 - Ridge Regression
@@ -48,101 +52,140 @@ The following regression algorithms were implemented and evaluated:
 - Artificial Neural Network (ANN)
 - XGBoost Regressor
 
+Among these, **XGBoost** achieved the best performance.
+
+---
+
+## 📊 Dataset
+
+**Dataset Name:** AP data.xlsx
+
+### Dataset Information
+
+- Total Records: 159
+- Input Features: 5
+- Target Variable: Bearing Resistance
+
+### Input Features
+
+| Feature | Description |
+|---------|-------------|
+| X1 | Chemical Type |
+| X2 | Concentration |
+| X3 | Depth (m) |
+| X4 | Radial Distance (m) |
+| X5 | Curing Period (days) |
+
+### Target
+
+- Bearing Resistance (kPa)
+
+---
+
+## ⚙️ Project Workflow
+
+1. Data Collection
+2. Data Preprocessing
+3. Feature Engineering
+4. Train-Test Split
+5. Feature Scaling
+6. Model Training
+7. Model Evaluation
+8. Model Comparison
+9. Web Application Deployment
+
 ---
 
 ## 🛠️ Tech Stack
 
 ### Programming Language
+
 - Python
 
-### Libraries
-- NumPy
-- Pandas
-- Matplotlib
+### Machine Learning
+
 - Scikit-learn
 - TensorFlow / Keras
 - XGBoost
 
-### Development Environment
+### Data Processing
+
+- Pandas
+- NumPy
+
+### Visualization
+
+- Matplotlib
+
+### Development
+
 - Google Colab
 - Jupyter Notebook
 
 ### Deployment
+
 - Vercel
 
 ---
 
-## 📊 Project Workflow
-
-1. Data Collection
-2. Data Cleaning and Preprocessing
-3. Feature Engineering
-4. Feature Scaling
-5. Train-Test Split
-6. Model Training
-7. Performance Evaluation
-8. Model Comparison
-9. Deployment
-
----
-
-## 📈 Evaluation Metrics
-
-The models were evaluated using:
-
-- R² Score
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-
----
-
-## 📂 Repository Structure
+## 📁 Repository Structure
 
 ```
 Bearing-Resistance-Prediction/
 │
+├── AP data.xlsx
 ├── bearing_resistance_prediction.ipynb
-├── README.md
 ├── requirements.txt
+├── README.md
 ├── LICENSE
-└── .gitignore
+├── .gitignore
+└── images/
+    ├── homepage.png
+    ├── prediction.png
+    └── dashboard.png
 ```
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/isshhiittaaa/Bearing-Resistance-Prediction.git
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the notebook using Jupyter Notebook or Google Colab.
 
 ---
 
 ## 👥 Team Project
 
-This project was developed as part of a university **Minor Project** in collaboration with team members.
+This project was developed as part of a **University Minor Project**.
 
 My contributions included:
 
 - Data preprocessing
 - Machine learning model implementation
 - Model training and evaluation
-- Performance comparison
-- Documentation and testing
+- Performance analysis
+- Documentation
 
 ---
 
 ## 🔮 Future Improvements
 
-- Hyperparameter tuning
-- Cross-validation
-- Feature importance analysis
-- Explainable AI (SHAP/LIME)
-- Deployment using Docker
-- REST API integration
-
----
-
-## 📸 Project Demo
-
-Visit the deployed application:
-
-👉 **https://bearing-resistance-ml.vercel.app/**
-
-*(Screenshots of the application and model outputs can be added here.)*
+- Hyperparameter Optimization
+- Explainable AI (SHAP)
+- Cross Validation
+- Docker Deployment
+- REST API Integration
 
 ---
 
@@ -156,12 +199,8 @@ This project is licensed under the MIT License.
 
 **Ishita Srivastava**
 
-B.Tech – Computer Science Engineering
+B.Tech Computer Science Engineering
 
 Aspiring Data Analyst | Machine Learning Enthusiast
 
 GitHub: https://github.com/isshhiittaaa
-
----
-
-⭐ If you found this project useful, consider giving it a **Star** on GitHub.
